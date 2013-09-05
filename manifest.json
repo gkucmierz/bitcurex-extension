@@ -2,14 +2,16 @@
   "manifest_version": 2,
 
   "name": "bitcurex-extension",
-  "description": "This extension demonstrates a browser action with kittens.",
+  "description": "bitcurex.com extension",
   "version": "1.0",
-
-  "permissions": [
-    "https://secure.flickr.com/"
-  ],
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  }
+  
+  "content_scripts": [
+    {
+      // Change 'matches' attribute to load content
+      // script only in pages you want to.
+      "matches": ["https://*.bitcurex.com/"],
+      "css": [""],
+      "js": ["market.js"]
+    }
+  ]
 }
