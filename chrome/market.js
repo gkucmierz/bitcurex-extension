@@ -1,5 +1,4 @@
 
-
 var id = function(id){
   return document.getElementById(id);
 };
@@ -30,5 +29,5 @@ var qs = function(sel, doc){
     }
   }, false);
 
-  bidBtn.previousSibling.previousSibling.insertBefore(myBtn);
+  bidBtn.parentNode.insertBefore(myBtn, bidBtn.previousSibling.previousSibling);
 });
