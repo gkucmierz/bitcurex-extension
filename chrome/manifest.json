@@ -10,7 +10,6 @@
       // Change 'matches' attribute to load content
       // script only in pages you want to.
       "matches": ["https://*.bitcurex.com/"],
-      "css": [""],
       "js": ["market.js"]
     }
   ]
